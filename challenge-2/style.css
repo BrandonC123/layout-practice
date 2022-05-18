@@ -24,11 +24,10 @@ body {
 }
 
 .container {
-  width: 100%;
+  width: 80%;
+  max-width: 1050px;
   margin: 0 auto;
-  padding: 2em;
-  background: #23424a;
-  color: white;
+  padding: 2em 0 ;
 }
 
 .intro-content {
@@ -36,12 +35,9 @@ body {
   max-width: 525px;
 }
 
-.more, .intro-container {
-  max-width: 1050px;
-  margin: 0 auto;
+.intro-container { 
+  background-color: #23424a;
+  color: white;
 }
 
-.more-container {
-  padding: 2em;
-}
 
