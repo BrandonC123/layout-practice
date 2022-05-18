@@ -23,6 +23,14 @@ body {
   font-family: sans-serif;
 }
 
+h1 {
+  font-size: 48px;
+}
+
+p {
+  font-size: 21px;
+}
+
 .container {
   width: 80%;
   max-width: 1050px;
@@ -38,6 +46,15 @@ body {
 .intro-container { 
   background-color: #23424a;
   color: white;
+}
+
+.learn-btn {
+  border: none;
+  border-radius: 25px;
+  font-size: 21px;
+  font-weight: bold;
+  background-color: #38CFD9;
+  padding: .25em 1em;
 }
 
 
