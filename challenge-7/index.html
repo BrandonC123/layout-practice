@@ -14,35 +14,40 @@
         <title>Document</title>
     </head>
     <body>
-        <header class="hero">
-            <div class="hero-text">
-                <p>LOREM IPSOM SIT</p>
-                <h1 class="accent-text1">
+        <section class="intro">
+            <div class="container">
+                <p class="intro-text">LOREM IPSUM SIT</p>
+                <h1 class="accent-text-dark intro-title">
                     Responsive Layouts don't have to be a struggle
                 </h1>
             </div>
-        </header>
-        <div class="container column">
-            <h2 class="accent-text1">Quality Designs</h2>
+        </section>
+        <section class="container column">
+            <h2 class="accent-text-dark">Quality Designs</h2>
             <div class="row">
-                <p class="container-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quia itaque rerum cum quidem reiciendis, architecto
-                    exercitationem quis dolores! Nam labore voluptatibus vel
-                    corporis debitis, saepe autem eum? Omnis, rerum. Iusto.
-                </p>
-                <p class="container-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
-                    sint repudiandae alias ea aliquid temporibus illo tempore?
-                    Nulla, maxime officiis, rem recusandae possimus delectus,
-                    omnis reiciendis excepturi facilis tempora eum.
-                </p>
+                <div class="col">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quia itaque rerum cum quidem reiciendis, architecto
+                        exercitationem quis dolores! Nam labore voluptatibus vel
+                        corporis debitis, saepe autem eum? Omnis, rerum. Iusto.
+                    </p>
+                </div>
+                <div class="col">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ut sint repudiandae alias ea aliquid temporibus illo
+                        tempore? Nulla, maxime officiis, rem recusandae possimus
+                        delectus, omnis reiciendis excepturi facilis tempora
+                        eum.
+                    </p>
+                </div>
             </div>
-        </div>
-        <div class="row-three">
+        </section>
+        <section class="row-three">
             <div class="container row">
-                <div class="container-text">
-                    <h2 class="accent-text2">Made Custom for you</h2>
+                <div class="col">
+                    <h2 class="accent-text-light">Made Custom for you</h2>
                     <p>
                         Lorem ipsum dolor sit, amet consectetur adipisicing
                         elit. Corrupti, fugiat minus, provident libero tempore
@@ -50,14 +55,18 @@
                         molestiae ut eaque voluptates vitae, quo fugit cumque.
                     </p>
                 </div>
-                <img class="container-img" src="./img/image-01.jpg" />
+                <div class="col">
+                    <img src="./img/image-01.jpg" alt="sunset in mountains" />
+                </div>
             </div>
-        </div>
-        <div class="row-four">
+        </section>
+        <section class="row-four">
             <div class="container row">
-                <img class="container-img" src="./img/image-02.jpg" />
-                <div class="container-text">
-                    <h2 class="accent-text2">Created with care</h2>
+                <div class="col">
+                    <img src="./img/image-02.jpg" alt="sunset in mountains" />
+                </div>
+                <div class="col">
+                    <h2 class="accent-text-light">Created with care</h2>
                     <p>
                         Lorem ipsum dolor sit, amet consectetur adipisicing
                         elit. Corrupti, fugiat minus, provident libero tempore
@@ -66,6 +75,6 @@
                     </p>
                 </div>
             </div>
-        </div>
+        </section>
     </body>
 </html>
