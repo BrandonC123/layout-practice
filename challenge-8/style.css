@@ -130,10 +130,7 @@ header {
 li a {
     text-decoration: none;
     list-style: none;
-}
-
-.nav__item + .nav__item {
-    margin-top: 20px;
+    padding: 0;
 }
 
 .nav__link {
@@ -148,6 +145,10 @@ li a {
     border-radius: 100px;
 }
 
+.nav__item + .nav__item {
+    margin-top: 2em;
+}
+
 .nav--visible {
     visibility: visible;
     height: auto;
@@ -156,6 +157,7 @@ li a {
 
 .logo {
     height: 30px;
+    padding: 0 2.5em;
 }
 
 .hero {
@@ -189,14 +191,25 @@ li a {
     }
 
     .nav {
-        visibility: visible;
         display: flex;
+        justify-content: space-evenly;
+        visibility: visible;
         height: auto;
+    }
+
+    .nav__list {
+        display: flex;
+    }
+
+    .nav__item + .nav__item {
+        margin-top: 0;
+        margin-left: 20px;
     }
 
     .row {
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
 
     .hero__text {
