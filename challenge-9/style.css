@@ -28,6 +28,10 @@ ul {
     padding: 0;
 }
 
+section {
+    padding: 4em 0;
+}
+
 .accent-text {
     color: #a59678;
 }
@@ -53,13 +57,39 @@ ul {
 
 .intro {
     background-color: #3b4050;
-    padding: 4em 0;
     color: white;
 }
 
 .section-one {
-    background-color: #dddfe6;
-    padding: 3em 0;
+    background-color: #e6e7eb;
+}
+
+.col {
+    text-align: center;
+}
+
+.section-two {
+}
+
+.section-two-card {
+    background-color: #3b4050;
+    color: white;
+    text-align: center;
+    margin-bottom: 1em;
+    padding: 1em;
+}
+
+.section-three {
+    background-color: #2e323f;
+    color: white;
+}
+
+.section-three-title {
+    text-align: center;
+}
+
+.card-title {
+    color: white;
 }
 
 .brown-btn {
@@ -71,7 +101,20 @@ ul {
     padding: 0.5em 1em;
 }
 
-@media (max-width: 700px) {
+@media (min-width: 700px) {
+    .row {
+        display: flex;
+    }
+    .intro-title {
+        font-size: 2rem;
+    }
+    .section-two-card {
+        margin: 0;
+    }
+    .section-two-card + .section-two-card,
+    .col + .col {
+        margin-left: 15px;
+    }
 }
 
 @media (min-width: 1000px) {
