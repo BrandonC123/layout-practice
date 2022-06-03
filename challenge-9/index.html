@@ -4,12 +4,24 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap"
+            rel="stylesheet"
+        />
         <link rel="stylesheet" href="style.css" />
         <title>Document</title>
     </head>
     <body>
         <header>
-            <div>
+            <div class="container">
+                <a class="logo" href="#">
+                    <img
+                        src="img/logo.svg"
+                        alt="conquering responsive layouts"
+                    />
+                </a>
                 <nav>
                     <ul class="nav__list nav__list--primary">
                         <li class="nav__item">
@@ -27,7 +39,9 @@
                             <a href="#" class="nav__link">Sign In</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#" class="nav__link nav__link--button"
+                            <a
+                                href="#"
+                                class="nav__link nav__link--button brown-btn"
                                 >Sign up</a
                             >
                         </li>
@@ -36,131 +50,139 @@
             </div>
         </header>
 
-        <section class="intro row">
-            <h1 class="intro-title">
-                Responsive layouts
-                <span class="accent-text">don't have to be a struggle</span>
-            </h1>
-            <div class="column">
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Porro reiciendis repellendus nesciunt enim delectus
-                    assumenda libero, nulla, incidunt, exercitationem quo eius
-                    labore atque pariatur officiis recusandae animi itaque hic
-                    quis?
-                </p>
-                <a href="#">I WANT TO LEARN</a>
+        <section class="intro">
+            <div class="container row">
+                <h1 class="intro-title">
+                    Responsive layouts
+                    <span class="accent-text">don't have to be a struggle</span>
+                </h1>
+                <div class="column">
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Porro reiciendis repellendus nesciunt enim
+                        delectus assumenda libero, nulla, incidunt,
+                        exercitationem quo eius labore atque pariatur officiis
+                        recusandae animi itaque hic quis?
+                    </p>
+                    <a class="brown-btn" href="#">I WANT TO LEARN</a>
+                </div>
             </div>
         </section>
 
         <section class="section-one">
-            <div class="col">
-                <h3>Mobile-first</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Placeat architecto vel voluptatibus animi ad esse facilis
-                    harum cum quod quas.
-                </p>
-            </div>
-            <div class="col">
-                <h3>Efficient</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Placeat architecto vel voluptatibus animi ad esse facilis
-                    harum cum quod quas.
-                </p>
-            </div>
-            <div class="col">
-                <h3>Done right</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Placeat architecto vel voluptatibus animi ad esse facilis
-                    harum cum quod quas.
-                </p>
+            <div class="container">
+                <div class="col">
+                    <h3 class="accent-text">Mobile-first</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Placeat architecto vel voluptatibus animi ad esse facilis
+                        harum cum quod quas.
+                    </p>
+                </div>
+                <div class="col">
+                    <h3 class="accent-text">Efficient</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Placeat architecto vel voluptatibus animi ad esse facilis
+                        harum cum quod quas.
+                    </p>
+                </div>
+                <div class="col">
+                    <h3 class="accent-text">Done right</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Placeat architecto vel voluptatibus animi ad esse facilis
+                        harum cum quod quas.
+                    </p>
+                </div>
             </div>
         </section>
 
         <section class="section-two row">
-            <div class="section-two-left-col column">
-                <h2 class="accent-text">It doesn't have to be so hard</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Vitae provident tempora iusto, odit voluptate ea quas eum
-                    optio expedita, repudiandae enim! Alias deleniti aperiam
-                    nostrum mollitia voluptatem reprehenderit laboriosam
-                    architecto, dolor deserunt libero repudiandae fugit odio
-                    repellat, non voluptatum animi ex! Dolore distinctio quod
-                    explicabo recusandae soluta quas esse optio.
-                </p>
-                <img src="./img/the-image.jpg" />
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Minus odit voluptatibus commodi quaerat tenetur dolore
-                    excepturi sed consequuntur, provident nisi reprehenderit qui
-                    placeat? Facere nisi qui, quasi aut ullam beatae architecto!
-                    Sapiente magnam architecto voluptate earum? Assumenda
-                    adipisci, amet incidunt voluptates commodi aperiam
-                    voluptatem qui optio saepe, dolorum magni quasi.
-                </p>
-            </div>
-            <div class="section-two-right-col">
-                <div class="section-two-cards">
-                    <h2>Break it down</h2>
+            <div class="container">
+                <div class="section-two-left-col column">
+                    <h2 class="accent-text">It doesn't have to be so hard</h2>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Placeat architecto vel voluptatibus animi ad esse
-                        facilis harum cum quod quas.
+                        Vitae provident tempora iusto, odit voluptate ea quas eum
+                        optio expedita, repudiandae enim! Alias deleniti aperiam
+                        nostrum mollitia voluptatem reprehenderit laboriosam
+                        architecto, dolor deserunt libero repudiandae fugit odio
+                        repellat, non voluptatum animi ex! Dolore distinctio quod
+                        explicabo recusandae soluta quas esse optio.
+                    </p>
+                    <img src="./img/the-image.jpg" />
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Minus odit voluptatibus commodi quaerat tenetur dolore
+                        excepturi sed consequuntur, provident nisi reprehenderit qui
+                        placeat? Facere nisi qui, quasi aut ullam beatae architecto!
+                        Sapiente magnam architecto voluptate earum? Assumenda
+                        adipisci, amet incidunt voluptates commodi aperiam
+                        voluptatem qui optio saepe, dolorum magni quasi.
                     </p>
                 </div>
-                <div class="section-two-cards">
-                    <h2>Work your way up</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Placeat architecto vel voluptatibus animi ad esse
-                        facilis harum cum quod quas.
-                    </p>
-                </div>
-                <div class="section-two-cards">
-                    <h2>Mobile first</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Placeat architecto vel voluptatibus animi ad esse
-                        facilis harum cum quod quas.
-                    </p>
+                <div class="section-two-right-col">
+                    <div class="section-two-cards">
+                        <h2>Break it down</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Placeat architecto vel voluptatibus animi ad esse
+                            facilis harum cum quod quas.
+                        </p>
+                    </div>
+                    <div class="section-two-cards">
+                        <h2>Work your way up</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Placeat architecto vel voluptatibus animi ad esse
+                            facilis harum cum quod quas.
+                        </p>
+                    </div>
+                    <div class="section-two-cards">
+                        <h2>Mobile first</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Placeat architecto vel voluptatibus animi ad esse
+                            facilis harum cum quod quas.
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
         <section class="section-three">
-            <h1>Just scratching the surface</h1>
-            <div class="row">
-                <div class="section-three-left-col">
-                    <h3 class="accent-text">About our company</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Illo iste praesentium ipsum quas explicabo expedita,
-                        ratione facere minima laudantium corrupti.
-                    </p>
-                </div>
-                <div class="section-three-right-col">
-                    <div class="column">
-                        <h3 class="accent-text">Getting around</h3>
-                        <p>Home</p>
-                        <p>About</p>
-                        <p>Contact</p>
+            <div class="container">
+                <h1>Just scratching the surface</h1>
+                <div class="row">
+                    <div class="section-three-left-col">
+                        <h3 class="accent-text">About our company</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Illo iste praesentium ipsum quas explicabo expedita,
+                            ratione facere minima laudantium corrupti.
+                        </p>
                     </div>
-                    <div class="column">
-                        <h3 class="accent-text">Other things</h3>
-                        <p>Lorem</p>
-                        <p>Lorem</p>
-                        <p>Lorem</p>
-                        <p>Lorem</p>
-                    </div>
-                    <div class="column">
-                        <h3 class="accent-text">And more</h3>
-                        <p>Lorem</p>
-                        <p>Lorem</p>
-                        <p>Lorem</p>
-                        <p>Lorem</p>
+                    <div class="section-three-right-col">
+                        <div class="column">
+                            <h3 class="accent-text">Getting around</h3>
+                            <p>Home</p>
+                            <p>About</p>
+                            <p>Contact</p>
+                        </div>
+                        <div class="column">
+                            <h3 class="accent-text">Other things</h3>
+                            <p>Lorem</p>
+                            <p>Lorem</p>
+                            <p>Lorem</p>
+                            <p>Lorem</p>
+                        </div>
+                        <div class="column">
+                            <h3 class="accent-text">And more</h3>
+                            <p>Lorem</p>
+                            <p>Lorem</p>
+                            <p>Lorem</p>
+                            <p>Lorem</p>
+                        </div>
                     </div>
                 </div>
             </div>

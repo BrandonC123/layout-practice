@@ -8,15 +8,24 @@ body {
 *::before,
 *::after {
     box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
 }
 
 img {
     max-width: 100%;
 }
 
+header {
+    background-color: #2e323f;
+    padding: 1em 0;
+}
+
 h1,
-h2 {
+h2,
+h3,
+ul {
     margin: 0;
+    padding: 0;
 }
 
 .accent-text {
@@ -27,6 +36,43 @@ h2 {
     list-style: none;
 }
 
+.nav__item {
+    margin-bottom: 0.5em;
+}
+
 .nav__link {
     text-decoration: none;
+    color: white;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.intro {
+    background-color: #3b4050;
+    padding: 4em 0;
+    color: white;
+}
+
+.section-one {
+    background-color: #dddfe6;
+    padding: 3em 0;
+}
+
+.brown-btn {
+    text-decoration: none;
+    background-color: #a59678;
+    font-weight: bold;
+    color: white;
+    border-radius: 100px;
+    padding: 0.5em 1em;
+}
+
+@media (max-width: 700px) {
+}
+
+@media (min-width: 1000px) {
 }
