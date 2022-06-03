@@ -1,0 +1,32 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1,
+h2 {
+    margin: 0;
+}
+
+.accent-text {
+    color: #a59678;
+}
+
+.nav__list {
+    list-style: none;
+}
+
+.nav__link {
+    text-decoration: none;
+}
