@@ -16,6 +16,9 @@
     <body>
         <header>
             <div class="container row">
+                <button class="nav-toggle">
+                    <img src="./img/menu-icon.svg" alt="" />
+                </button>
                 <a class="logo" href="#">
                     <img
                         src="img/logo.svg"
@@ -154,8 +157,10 @@
         </section>
         <section class="section-three">
             <div class="container">
-                <h1 class="card-title section-three-title">Just scratching the surface</h1>
-                <div class="row">
+                <h1 class="card-title section-three-title">
+                    Just scratching the surface
+                </h1>
+                <div class="section-three-cols row">
                     <div class="section-three-left-col">
                         <h3 class="accent-text">About our company</h3>
                         <p>
@@ -189,5 +194,12 @@
                 </div>
             </div>
         </section>
+        <script>
+            document
+                .querySelector(".nav-toggle")
+                .addEventListener("click", function () {
+                    document.querySelector(".nav").classList.toggle("show");
+                });
+        </script>
     </body>
 </html>
