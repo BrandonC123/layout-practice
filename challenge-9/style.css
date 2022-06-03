@@ -18,6 +18,7 @@ img {
 header {
     background-color: #2e323f;
     padding: 1em 0;
+    text-align: center;
 }
 
 h1,
@@ -34,6 +35,10 @@ section {
 
 .accent-text {
     color: #a59678;
+}
+
+.nav {
+    width: 100%;
 }
 
 .nav__list {
@@ -95,15 +100,27 @@ section {
     font-weight: bold;
     color: white;
     border-radius: 100px;
-    padding: 0.5em 1em;
+    padding: 0.25em 1em;
 }
 
 @media (min-width: 700px) {
     .row {
         display: flex;
     }
+    .nav {
+        justify-content: flex-end;
+        align-items: center;
+        gap: 15px;
+    }
+    .nav__list {
+        gap: 15px;
+    }
     .intro-title {
         font-size: 2rem;
+    }
+    .intro-text {
+        align-self: flex-end;
+        margin-left: 2em;
     }
     .section-two-container {
         display: flex;
