@@ -68,9 +68,6 @@ section {
     text-align: center;
 }
 
-.section-two {
-}
-
 .section-two-card {
     background-color: #3b4050;
     color: white;
@@ -108,6 +105,14 @@ section {
     .intro-title {
         font-size: 2rem;
     }
+    .section-two-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .section-two-right-col {
+        display: flex;
+        flex-direction: row;
+    }
     .section-two-card {
         margin: 0;
     }
@@ -118,4 +123,24 @@ section {
 }
 
 @media (min-width: 1000px) {
+    .row {
+        display: flex;
+    }
+    .section-two-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .section-two-left-col {
+        width: 60%;
+    }
+    .section-two-right-col {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+    }
+    .section-two-card + .section-two-card {
+        margin-left: 0;
+        margin-top: 15px;
+    }
 }
